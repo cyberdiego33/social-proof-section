@@ -23,15 +23,15 @@ body {
     justify-content: center;
     align-items: center;
 
-    background: 
-        url(images/bg-pattern-top-mobile.svg) no-repeat,
-        url(images/bg-pattern-bottom-mobile.svg) no-repeat;
+    background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, right bottom;
+    background-size: 375px 300px, 375px 300px;
 }
 
 .container {
     width: 375px;
     padding: 1rem;
-    background-color: #fff;
 }
 
 .title-div {
@@ -94,9 +94,8 @@ body {
 
 @media screen and (min-width: 1200px) {
     body {
-        background: 
-            url(images/bg-pattern-top-desktop.svg) no-repeat,
-            url(images/bg-pattern-bottom-desktop.svg) no-repeat;
+        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+        background-size: 600px 400px, 800px 650px;
     }
     .container {
         width: 1150px;
